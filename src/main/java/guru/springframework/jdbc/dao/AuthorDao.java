@@ -1,6 +1,9 @@
 package guru.springframework.jdbc.dao;
 
 import guru.springframework.jdbc.domain.Author;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
 
 /**
  * Created by jt on 8/22/21.
@@ -13,6 +16,8 @@ public interface AuthorDao {
     Author saveNewAuthor(Author author);
 
     Author updateAuthor(Author author);
+
+    List<Author> findAuthorsByLastName(Pageable pageable, String lastName);
 
     void deleteAuthorById(Long id);
 }

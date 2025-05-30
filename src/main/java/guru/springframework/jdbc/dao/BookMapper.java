@@ -10,7 +10,7 @@ import java.sql.SQLException;
 /**
  * Created by jt on 8/25/21.
  */
-public class BookMapper implements RowMapper<Book> {
+public class    BookMapper implements RowMapper<Book> {
 
     @Override
     public Book mapRow(ResultSet rs, int rowNum) throws SQLException {
